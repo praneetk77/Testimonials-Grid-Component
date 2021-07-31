@@ -92,13 +92,12 @@ h2 {
   color: black;
 }
 
-@media screen and(max-width:768px) {
+@media screen and (max-width: 768px) {
   .grid {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .grid-child {
-    width: 100%;
+    grid-column: 1/-1;
   }
 }
